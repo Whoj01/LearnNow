@@ -35,7 +35,7 @@ A ideia do aplicativo é dar acessabilidade a estudantes da escola usuária do a
 <br>
 Página no gitHub, acesse por esse link: 
 
-https://whoj01.github.io/SixbeautySalon/#home
+https://whoj01.github.io/LearnNow/
 
 <br>
 
