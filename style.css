@@ -258,6 +258,12 @@ nav.show div.icon-x {
   color: var(--title-color);
 }
 
+.to-the-bot img {
+  width: 1rem;
+  left: 1rem;
+  bottom: 1rem;
+}
+
 /* ============================ About ============================*/
 .card {
   padding: 3.625rem 2rem;
@@ -370,11 +376,10 @@ footer p {
   margin-bottom: 0.75rem;
 }
 
-/*==== Button to the home ====== */
+/*==== Button to the home / f ====== */
 
-.image {
+.back-to-top img {
   width: 1rem;
-  height: 1rem;
 }
 
 .back-to-top {
@@ -390,17 +395,12 @@ footer p {
 
   font-size: 1.5rem;
   line-height: 0;
-
-  visibility: hidden;
-  opacity: 0;
+  transform: rotate(180deg);
   transition: 0.2s;
-  transform: translateY(200%);
 }
 
-.back-to-top.show {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
+.back-to-top.bottom {
+  transform: rotate(0);
 }
 
 /*========================= MidiaQueries ===================== */

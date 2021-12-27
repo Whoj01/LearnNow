@@ -1,3 +1,15 @@
+const backToTopButton = document.querySelector('.back-to-top')
+
+function backToTop() {
+  if (window.scrollY < 560) {
+    backToTopButton.href = '#contact'
+    backToTopButton.classList.remove('bottom')
+  } else if (window.scrollY >= 560) {
+    backToTopButton.classList.add('bottom')
+    backToTopButton.href = '#home'
+  }
+}
+
 /*  abre e fecha o menu quando clicar no icone: hamburguer e x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
@@ -31,8 +43,6 @@ function changeHeaderWhenScroll() {
   }
 }
 
-changeHeaderWhenScroll()
-
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',
@@ -53,6 +63,9 @@ scrollReveal.reveal(
 )
 
 /* css Animate in form */
+const inputName = document.querySelector('.nametxt')
+const inputEmail = document.querySelector('.emailtxt')
+const inputMessage = document.querySelector('.message')
 const animateBounceIn = 'animate__bounceOutRight'
 const animateBonceLeft = 'animate__bounceInLeft'
 const animateForm = document.querySelector('.form')
@@ -61,9 +74,17 @@ const button = document.querySelector('.enviar')
 button.addEventListener('click', event => {
   event.preventDefault()
   animateForm.classList.add(animateBounceIn)
+  inputName.value = ' '
+  inputEmail.value = ' '
+  inputMessage.value = ' '
 })
 
 animateForm.addEventListener('animationend', () => {
   animateForm.classList.remove(animateBounceIn)
   animateForm.classList.add(animateBonceLeft)
+})
+
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
 })
