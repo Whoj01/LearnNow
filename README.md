@@ -37,3 +37,8 @@ Utilitários
  Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1054556500962878181). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
  
  ---
+ 
+<p>Feito com ❤️ por Josué Dias 👋🏽 Entre em contato!</p>
+
+[![Linkedin Badge](https://img.shields.io/badge/-Josuedias-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/nycole-xavier-641271202/)](https://www.linkedin.com/in/josué-dias-271458224/)
+
